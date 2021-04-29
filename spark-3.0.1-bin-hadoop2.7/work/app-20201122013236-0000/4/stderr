@@ -1,0 +1,54 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/bin/java" "-cp" "/Users/baotran/Desktop/Spark+Docker/spark-3.0.1-bin-hadoop2.7/conf/:/Users/baotran/Desktop/Spark+Docker/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=52715" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@baos-mbp:52715" "--executor-id" "4" "--hostname" "172.27.0.67" "--cores" "1" "--app-id" "app-20201122013236-0000" "--worker-url" "spark://Worker@172.27.0.67:52703"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/22 20:07:24 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 14183@Baos-MBP
+20/11/22 20:07:24 INFO SignalUtils: Registered signal handler for TERM
+20/11/22 20:07:24 INFO SignalUtils: Registered signal handler for HUP
+20/11/22 20:07:24 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/baotran/Desktop/Spark+Docker/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/22 20:07:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/22 20:07:25 INFO SecurityManager: Changing view acls to: baotran
+20/11/22 20:07:25 INFO SecurityManager: Changing modify acls to: baotran
+20/11/22 20:07:25 INFO SecurityManager: Changing view acls groups to: 
+20/11/22 20:07:25 INFO SecurityManager: Changing modify acls groups to: 
+20/11/22 20:07:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(baotran); groups with view permissions: Set(); users  with modify permissions: Set(baotran); groups with modify permissions: Set()
+20/11/22 20:07:25 INFO TransportClientFactory: Successfully created connection to baos-mbp/172.27.0.67:52715 after 127 ms (0 ms spent in bootstraps)
+20/11/22 20:07:25 INFO SecurityManager: Changing view acls to: baotran
+20/11/22 20:07:25 INFO SecurityManager: Changing modify acls to: baotran
+20/11/22 20:07:25 INFO SecurityManager: Changing view acls groups to: 
+20/11/22 20:07:25 INFO SecurityManager: Changing modify acls groups to: 
+20/11/22 20:07:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(baotran); groups with view permissions: Set(); users  with modify permissions: Set(baotran); groups with modify permissions: Set()
+20/11/22 20:07:26 INFO TransportClientFactory: Successfully created connection to baos-mbp/172.27.0.67:52715 after 2 ms (0 ms spent in bootstraps)
+20/11/22 20:07:26 INFO DiskBlockManager: Created local directory at /private/var/folders/j3/z5zmcbt16d1csdxhj0381gjr0000gn/T/spark-1ca89d1d-e669-4fa8-ae06-ace5669efd95/executor-7b475a9c-165a-4082-afe0-099367d508b6/blockmgr-2331e315-2b92-4aca-aeb3-ef99a908df55
+20/11/22 20:07:26 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/22 20:07:26 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@baos-mbp:52715
+20/11/22 20:07:26 INFO WorkerWatcher: Connecting to worker spark://Worker@172.27.0.67:52703
+20/11/22 20:07:26 INFO TransportClientFactory: Successfully created connection to /172.27.0.67:52703 after 1 ms (0 ms spent in bootstraps)
+20/11/22 20:07:26 INFO WorkerWatcher: Successfully connected to spark://Worker@172.27.0.67:52703
+20/11/22 20:07:26 INFO ResourceUtils: ==============================================================
+20/11/22 20:07:26 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/22 20:07:26 INFO ResourceUtils: ==============================================================
+20/11/22 20:07:26 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/22 20:07:26 INFO Executor: Starting executor ID 4 on host 172.27.0.67
+20/11/22 20:07:26 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56677.
+20/11/22 20:07:26 INFO NettyBlockTransferService: Server created on 172.27.0.67:56677
+20/11/22 20:07:26 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/22 20:07:26 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(4, 172.27.0.67, 56677, None)
+20/11/22 20:07:26 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(4, 172.27.0.67, 56677, None)
+20/11/22 20:07:26 INFO BlockManager: Initialized BlockManager: BlockManagerId(4, 172.27.0.67, 56677, None)
+20/11/22 20:07:26 INFO Executor: Using REPL class URI: spark://baos-mbp:52715/classes
+20/11/22 21:27:52 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/11/22 21:27:53 INFO Executor: Told to re-register on heartbeat
+20/11/22 21:27:53 INFO BlockManager: BlockManager BlockManagerId(4, 172.27.0.67, 56677, None) re-registering with master
+20/11/22 21:27:53 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(4, 172.27.0.67, 56677, None)
+20/11/22 21:27:53 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(4, 172.27.0.67, 56677, None)
+20/11/22 21:27:53 INFO BlockManager: Reporting 0 blocks to the master.
+20/11/22 21:27:53 INFO MemoryStore: MemoryStore cleared
+20/11/22 21:27:53 INFO BlockManager: BlockManager stopped
+20/11/22 21:27:53 INFO ShutdownHookManager: Shutdown hook called
